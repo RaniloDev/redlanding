@@ -1,0 +1,277 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Righteous", serif;
+}
+
+body {
+    background-color: #000000;
+}
+
+body::-webkit-scrollbar {
+    width: 0px;
+    /* Largura da barra de rolagem vertical */
+    height: 0px;
+    /* Altura da barra de rolagem horizontal */
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.753);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    backdrop-filter: blur(40px);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+ul {
+    display: flex;
+    position: relative;
+    list-style: none;
+    margin-right: 20px;
+}
+
+li {
+    margin: 35px;
+}
+
+.li a:hover {
+    padding-bottom: 42px;
+    border-bottom: 3px solid white;
+}
+
+img {
+    margin-right: 30rem;
+    width: 25rem;
+}
+
+main {
+    background-image: url(img/red.png);
+    height: 100vh;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: rgb(184, 184, 184);
+}
+
+main p {
+    color: aliceblue;
+    text-align: left;
+    position: relative;
+    top: 240px;
+    max-width: 500px;
+    left: 330px;
+    font-size: 24px;
+}
+
+button {
+    position: relative;
+    left: 480px;
+    top: 300px;
+    width: 200px;
+    height: 60px;
+    border-radius: 5px;
+    font-size: 19px;
+    border: none;
+    background-color: rgb(212, 21, 21);
+    color: white;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+button:hover {
+    background-color: rgb(177, 17, 17);
+}
+
+footer {
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Três colunas de igual largura */
+    gap: 20px;
+    /* Espaço entre as colunas */
+    padding: 20px;
+    background-color: #000000;
+    color: white;
+    justify-content: center;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    margin-left: 130px;
+}
+
+footer .i {
+    position: relative;
+    overflow: hidden;
+}
+
+footer .i .a {
+    display: block;
+    width: 80%;
+    height: auto;
+}
+
+footer .i .f {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer a div {
+    transition: 0.3s;
+}
+
+footer h3 {
+    color: white;
+    margin-top: 40px;
+    margin-right: 100px;
+}
+
+footer a:hover h3,
+footer a:hover div {
+    transform: scale(1.1);
+    color: red;
+}
+
+.enfeite {
+    background: linear-gradient(to bottom, #13131380, #000000d0, #000000);
+    ;
+    border-radius: 10px;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px 5px 0 0;
+    position: relative;
+    bottom: 30px;
+    opacity: 0.9;
+}
+
+header {
+    background-color: #000000;
+    width: 100%;
+    color: white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 200px;
+}
+
+header img {
+    width: 70px;
+    margin: auto 0;
+    margin-top: 30px;
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+header h1 {
+    font-family: "Bebas Neue", serif;
+    font-size: 50px;
+}
+
+header div {
+    margin-right: 25px;
+}
+
+section {
+    background-color: #000000;
+    width: 100%;
+    color: white;
+    text-align: center;
+    margin-top: 200px;
+}
+
+section div {
+    margin-right: 25px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+    gap: 200px;
+}
+
+.al {
+    border: 1px solid white;
+    padding: 13px;
+    border-radius: 5px;
+    color: white;
+    transition: .5s;
+}
+
+.al:hover {
+    background-color: white;
+    color: black;
+}
+
+.icons {
+    margin: 20px 10px;
+}
+
+.reds {
+    font-size: 25px;
+    margin: 20px 5px;
+}
+
+.reds:hover {
+    padding: 0px;
+}
+
+span {
+    color: red;
+}
+
+.responsive {
+    display: none;
+}
+
+@media (max-width: 1600px) {
+    div, main, footer, header, section, ul {
+        display: none;
+
+    }
+
+    body {
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    img {
+        margin: 0 auto;
+    }
+   
+    .info {
+        margin-bottom: 30px;
+    }
+
+    .responsive {
+        display: block;
+        color: #fff;
+        margin-bottom: 50px;
+        font-size: 30px;
+    }
+
+}
